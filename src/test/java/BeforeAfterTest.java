@@ -7,14 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import ui.data.User;
 import ui.data.UserGenerator;
 import ui.user.UserClient;
-
 import java.time.Duration;
 
 public abstract class BeforeAfterTest {
-    User user;
-    String accessToken;
-    WebDriver driver;
-    UserClient userClient;
+    protected User user;
+    private String accessToken;
+    protected WebDriver driver;
+    private UserClient userClient;
 
     @Before
     @Step("Precondition step for tests")
